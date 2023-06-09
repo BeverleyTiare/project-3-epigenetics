@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Epigenetics</title>
+    <meta name="description" content="Free open source Tailwind CSS Store template">
+    <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        .work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+
+        .hover\:grow {
+            transition: all 0.3s;
+            transform: scale(1);
+        }
+
+        .hover\:grow:hover {
+            transform: scale(1.02);
+        }
+
+        .carousel-open:checked+.carousel-item {
+            position: static;
+            opacity: 100;
+        }
+
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+
+        #carousel-1:checked~.control-1,
+        #carousel-2:checked~.control-2,
+        #carousel-3:checked~.control-3 {
+            display: block;
+        }
+
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #000;
+            /*Set to match the Tailwind colour you want the active one to be */
+        }
+    </style>
+
+
+<body class="bg-black text-white-600 work-sans leading-normal text-base tracking-normal">
+
+    <!--Nav-->
+    <nav style="color: white"  id="header" class="w-full z-30 top-0 py-1">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
+            
+            <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id=".
+            menu-toggle" />
+
+            <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+                <nav>
+                    <ul style="color: #c7c7c7" class="md:flex items-center justify-between text-base pt-4 md:pt-0">
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Epigenetics</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Genomic Kits</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">Consultants</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="order-1 md:order-2">
+                <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-white-800 text-xl " href="#">
+                    <!-- <svg class="fill-current text-gray-800 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 7c-4.418 0-8 1.79-8 4v1h16v-1c0-2.21-3.582-4-8-4zm0 2c-2.21 0-4 .895-4 2v1h8v-1c0-1.105-1.79-2-4-2z" />
+                    </svg> -->
+                    Epigenetics
+                </a>
+            </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mb-10">
+        <div class="grid grid-cols-5">
+            <div class="md:col-span-2 col-span-5 flex items-center justify-center h-screen">
+                <div class="bg-grey text-white font-bold rounded-lg border shadow-lg p-10">
+                    Wellness <br>
+                    Research <br>
+                    Services
+                </div>
+            </div>
+            <div class="md:col-span-3 col-span-5">
+                <div class="brainContainer"></div>
+            </div>
+        </div>
+       
+
+    </div>
+
+   
+      
+
+    <!--Further Page content-->
+    <div class="container mx-auto mb-5">
+        <div class="flex items-center justify-center h-screen">
+            <div class="bg-grey text-white font-bold rounded-lg border shadow-lg p-10">
+                <!--<h1>Epigenetics</h1>-->
+                <p>Epigenetics is the study of how your behaviors and environment can cause changes that affect the way your genes work. Unlike genetic changes, epigenetic changes are reversible and do not change your DNA sequence, but they can change how your body reads a DNA sequence.</p>
+            </div>
+          </div>
+    </div>
+    
+
+
+    <footer class="bg-gray-200 p-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">© 2023 Epigenetics.Co. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="dist/output.js"></script> 
+    <script src="./script.js"></script> 
+
+</body>
+</html>
+
+<!--https://codepen.io/UXauthority/pen/eZroGb
+
+    https://github.com/victors1681/3dbrain
+
+    https://brainbrowser.cbrain.mcgill.ca/  https://github.com/natacha-beck/brainbrowser
+    
+  https://www.zmo.ai/this-person-does-not-exist/ Fake People
+    
+  + request to open ai: cache responses in DB: mongo 
+
+  + embedding video: mp4
+
+  + reports and data storage
+
+  + apis.
+
+ + data transformation to real world lifestyle tip: GPT4?
+ 
+
+https://dev.to/fabiobiondi/create-a-react-18-typescript-bundle-using-esbuild-4n6o
+https://react.dev/learn
+
+
+### TODO: 
+scroll donw to next section Y
+order a kit
+schedule a consult
+sign up / login
+FAQs
+Privacy Policy
+Contact us
+socal media links
+Content for 
+-->
+
